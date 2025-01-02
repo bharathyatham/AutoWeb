@@ -1,5 +1,6 @@
 package modernization.backend;
 
+import org.testng.Assert;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
@@ -16,8 +17,7 @@ public class sampleRequest
         // Validate response
          int statusCode = response.getStatusCode();
          System.out.println(statusCode);
-        //Assert.assertEquals(200, response.getStatusCode());
-       // Assert.assertEquals("application/json; charset=utf-8", response.getHeader("Content-Type"));
-       // Assert.assertTrue(response.getBody().asString().contains("userId"));
+        Assert.assertEquals(200, response.getStatusCode());       
+        Assert.assertTrue(response.getBody().asString().contains("userId"));
     }
 }

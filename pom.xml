@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>sampletest</groupId>
@@ -57,20 +56,25 @@
 			<artifactId>poi</artifactId>
 			<version>5.3.0</version>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>5.3.0</version>
 		</dependency>
-
-
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.1.2</version>
+		</dependency>
+		
 	</dependencies>
 
 
 	<build>
-		<pluginManagement><!-- lock down plugins versions to avoid using Maven
+		<pluginManagement>			<!-- lock down plugins versions to avoid using Maven
 			defaults (may be moved to parent pom) -->
 			<plugins>
 				<!-- clean lifecycle, see
