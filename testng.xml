@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="modernization.web.AppTest"/>
+      <class name="modernization.web.Pract1"/>
+      <!--<class name="modernization.backend.sampleRequest"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
